@@ -1,0 +1,90 @@
+:root {
+    --line-one-color: rgba(193, 190, 190, 0.5);
+    --line-two-color: rgba(0, 0, 0, 0.5);
+    --line-three-color: rgba(115, 115, 144, 0.5);
+
+    --text-font-family: cursive;
+    --text-one-color: var(--line-one-color);
+    --text-two-color: var(--line-two-color);
+    --text-three-color: var(--line-three-color);
+
+    --text-font-size: calc(var(--animation-height)/7);
+    --text-font-color: rgb(0, 0, 0);
+    --text-font-animation: 2s alternate infinite loadingText;
+    
+
+    --line-one: 0.5rem solid var(--line-one-color);
+    --line-two: 0.5rem solid var(--line-two-color);
+    --line-three: 0.5rem solid var(--line-three-color);
+
+    --animation-width: 5rem;
+    --animation-height: 5rem;
+    --animation-one-duration: 1s;
+    --animation-two-duration: 1.7s;
+    --animation-three-duration: 2.3s;
+}
+
+.container.loader {
+    display: flex;
+    position: relative;
+    width: var(--animation-width);
+    height: var(--animation-height);
+}
+
+.load {
+    position: absolute;
+    width: var(--animation-width);
+    height: var(--animation-height);
+    border-radius: 50%;
+    animation: none;
+}
+
+.load.principal {
+    display: flex;
+    align-items: center;
+}
+
+.load.principal span {
+    margin: 0 auto;
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    color: var(--text-font-color);
+    animation: var(--text-font-animation);
+}
+
+.load.line.first {
+    border-top: var(--line-one);
+    animation: var(--animation-one-duration) infinite rotateDiv;
+}
+
+.load.line.second {
+    border-top: var(--line-two);
+    animation: var(--animation-two-duration) infinite rotateDiv;
+}
+
+.load.line.third {
+    border-top: var(--line-three);
+    animation: var(--animation-three-duration) infinite rotateDiv;
+}
+
+@keyframes rotateDiv {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingText {
+    from {
+        color: var(--text-three-color);
+        font-size: 1;
+    }
+    to {
+        color: var(--text-one-color);
+        font-size: calc(var(--text-font-size)*1.5);
+    }
+
+}
