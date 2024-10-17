@@ -4,6 +4,10 @@
 
 Building my Express.js server for the reservation system allows me to create a robust backend that seamlessly integrates with a MySQL database, utilizes JWT (JSON Web Tokens) for secure user authentication, and employs Multer for handling file uploads. With MySQL, I can efficiently manage and store user data, reservations, and related information while ensuring data integrity and fast access. The use of JWT enables me to implement stateless authentication, allowing users to log in and receive a token that grants them access to protected routes without needing server-side sessions. Additionally, Multer simplifies the process of uploading files, such as user profile images or reservation-related documents, ensuring a smooth user experience. Together, these technologies empower me to develop a secure, scalable, and user-friendly reservation system that meets the needs of both users and administrators.
 
+## Firebase Authentication Integration
+
+I use Firebase Authentication in my reservation system to simplify user management and enhance security. This service allows users to register and log in using email and password or third-party providers like Google. Firebase handles the authentication process, securely storing user credentials.
+
 ## Client with React JS
 
 Building a ReactJS client for my reservation system allows me to create a user-friendly interface that streamlines the interaction between users and the backend database. I can implement features like authentication and role-based access, ensuring that users can access only the functionalities relevant to their roles. The client enables me to manage catalogs, reservations, and customer data effectively, providing options for viewing, creating, updating, and deleting records.
