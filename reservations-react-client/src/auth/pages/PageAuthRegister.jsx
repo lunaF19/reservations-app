@@ -30,14 +30,15 @@ export const PageAuthRegister = () => {
   const { email, password, password2, handleInputChange } = useForm({
     email: "",
     password: "",
-    password2: ""
+    password2: "",
   });
 
-  const { authRegister, isValidPassword, passwordError, error, message } = useAuthLogin();
+  const { authRegister, isValidPassword, passwordError, error, message } =
+    useAuthLogin();
 
   const hadleOnSubmit = async (e) => {
     e.preventDefault();
-    authRegister({ email, password})
+    authRegister({ email, password });
     //authLogin({ userLogin: username, password });
   };
 
@@ -57,28 +58,26 @@ export const PageAuthRegister = () => {
   }, [isLogged]);
 
   useEffect(() => {
-    isValidPassword(password)
-  }, [password])
+    isValidPassword(password);
+  }, [password]);
 
   return (
     <>
       <NavBarUI />
       <Card>
         <CardBody>
-
           <Row>
             <Col md="7">
               <Row className="p-5 animate__animated animate__swing">
-                <img
-                  src="/imgRestaurantLogin.webp"
-                  alt=""
-                  className="rounded-3"
-                />
+                <img src="/imgReservations.webp" alt="" className="rounded-3" />
               </Row>
             </Col>
 
-            <CardWithShadow md={4} className="mb-5 p-5 mt-5 animate__animated animate__fadeInRight">
-            <Form className="login-form m-0 " onSubmit={hadleOnSubmit}>
+            <CardWithShadow
+              md={4}
+              className="mb-5 p-5 mt-5 animate__animated animate__fadeInRight"
+            >
+              <Form className="login-form m-0 " onSubmit={hadleOnSubmit}>
                 <h1> Register </h1>
                 <FormGroup tag={Col} md="11">
                   <Label> Introduce email </Label>
@@ -116,7 +115,7 @@ export const PageAuthRegister = () => {
 
                   <Label> Introduce password again</Label>
                   <Input
-                    disabled={passwordError || password ===""}
+                    disabled={passwordError || password === ""}
                     type="password"
                     name="password2"
                     id="password2"
@@ -126,11 +125,11 @@ export const PageAuthRegister = () => {
                     required
                   />
 
-                  {passwordError &&
+                  {passwordError && (
                     <Alert variant={"warning"} className="mt-2">
                       {passwordError}
                     </Alert>
-                  }
+                  )}
 
                   <Button
                     type="submit"
@@ -141,7 +140,6 @@ export const PageAuthRegister = () => {
                   >
                     Register{" "}
                   </Button>
-
                 </FormGroup>
               </Form>
             </CardWithShadow>
