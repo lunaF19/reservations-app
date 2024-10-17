@@ -66,7 +66,7 @@ export const PageAuthLogin = () => {
             <Col md="7">
               <Row className="p-5 animate__animated animate__swing">
                 <img
-                  src="/imgReservations.webp"
+                  src="/imgReservationsLogin.webp"
                   alt=""
                   className="rounded-3 "
                 />
