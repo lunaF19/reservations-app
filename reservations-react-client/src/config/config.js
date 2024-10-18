@@ -10,7 +10,7 @@ const envobj = {
 };
 
 const {
-  //fire Bae
+  //fire Base
   FB_APIKEY,
   FB_AUTHDOMAIN,
   FB_PROJECTID,
@@ -20,8 +20,6 @@ const {
 
   URL_API,
 } = envobj;
-
-console.log({ envobj });
 
 export {
   FB_APIKEY,
