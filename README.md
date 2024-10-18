@@ -1,5 +1,37 @@
 # App For Reservations - Education Purpose
 
+## Screenshot :camera:
+
+Some screentho captures in of pages of App:
+
+### Login :closed_lock_with_key:
+
+![Login Page](readme_images/page_login.png)
+
+### Register  :closed_lock_with_key:
+
+![Register Page](readme_images/register_page.png)
+
+### Profile User :man:
+
+![Profile User Page](readme_images/page_user_profile_2.png)
+
+### Search Category of Suite :mag:
+
+![Search Category of Suite Page](readme_images/pages_suites.png)
+
+### Suite Info :hotel:
+
+![Suite Info Page](readme_images/page_suite_2.png)
+
+### Suite Info Reservation :hotel:
+
+![Suite Info Reservation Page](readme_images/page_suite_3.png)
+
+### User reservations :hotel:
+
+![User reservations Page](readme_images/page_user_reservations.png)
+
 ## Server with Express.js
 
 Building my Express.js server for the reservation system allows me to create a robust backend that seamlessly integrates with a MySQL database, utilizes JWT (JSON Web Tokens) for secure user authentication, and employs Multer for handling file uploads. With MySQL, I can efficiently manage and store user data, reservations, and related information while ensuring data integrity and fast access. The use of JWT enables me to implement stateless authentication, allowing users to log in and receive a token that grants them access to protected routes without needing server-side sessions. Additionally, Multer simplifies the process of uploading files, such as user profile images or reservation-related documents, ensuring a smooth user experience. Together, these technologies empower me to develop a secure, scalable, and user-friendly reservation system that meets the needs of both users and administrators.
